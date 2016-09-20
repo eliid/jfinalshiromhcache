@@ -2,8 +2,16 @@
 <ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:noNamespaceSchemaLocation="http://ehcache.org/ehcache.xsd">
 
+<<<<<<< HEAD
   <!--  <diskStore path="java.io.tmpdir"/>-->
      <diskStore path="D:\cache"/>
+=======
+    <diskStore path="java.io.tmpdir"/>
+
+<!--
+    <diskStore path="D:\cache1"/>
+-->
+>>>>>>> a55ba8d135771c62f47574b4ab889766c20b3328
 
     <!--
     Mandatory Default Cache configuration. These settings will be applied to caches
@@ -26,12 +34,21 @@
     <defaultCache
             maxElementsInMemory="10"
             eternal="false"
+<<<<<<< HEAD
             timeToIdleSeconds="10"
             timeToLiveSeconds="5"
             overflowToDisk="true"
             maxElementsOnDisk="1"
             diskPersistent="true"
             diskExpiryThreadIntervalSeconds="10"
+=======
+            timeToIdleSeconds="120"
+            timeToLiveSeconds="130"
+            overflowToDisk="true"
+            maxElementsOnDisk="1"
+            diskPersistent="true"
+            diskExpiryThreadIntervalSeconds="20"
+>>>>>>> a55ba8d135771c62f47574b4ab889766c20b3328
             memoryStoreEvictionPolicy="LRU"
             />
 
@@ -39,7 +56,11 @@
     <cache name="passwordRetryCache"
            maxEntriesLocalHeap="2000"
            eternal="false"
+<<<<<<< HEAD
            timeToIdleSeconds="30"
+=======
+           timeToIdleSeconds="3600"
+>>>>>>> a55ba8d135771c62f47574b4ab889766c20b3328
            timeToLiveSeconds="10"
            overflowToDisk="false"
            statistics="true">

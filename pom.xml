@@ -231,7 +231,9 @@
                     <stopPort>5599</stopPort>
                     <webAppConfig>
                         <contextPath>/</contextPath>
+                        <defaultsDescriptor>src/main/resources/webdefault.xml</defaultsDescriptor>
                     </webAppConfig>
+
                     <scanIntervalSeconds>5</scanIntervalSeconds>
                 </configuration>
             </plugin>
